@@ -22,4 +22,9 @@ class MyAdapter(var noteList: ArrayList<String>) : RecyclerView.Adapter<MyAdapte
     }
 
     override fun getItemCount() = noteList.size
+
+    fun update(newList: ArrayList<String>) {
+        noteList = newList
+        notifyDataSetChanged()
+    }
 }
