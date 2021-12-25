@@ -1,10 +1,22 @@
 package com.example.notesapp
 
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.example.notesapp.databinding.ActivityMainBinding
+import android.view.WindowManager
+
+import android.os.Build
+import android.view.Window
+import android.R
+
+import android.graphics.drawable.Drawable
+
+
+
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -19,6 +31,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
 
         noteList = arrayListOf()
         recyclerView = binding.recyclerview
